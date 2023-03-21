@@ -126,7 +126,7 @@ header{
 }
 .container-bot h2{
     margin: 40px auto;
-    font-size: 2em;
+    font-size: 2.2em;
     width: 80%;
 }
 .container-bot p{
@@ -134,9 +134,14 @@ header{
     width: 80%;
 }
 .container-bot h3{
-    margin: 50px 0;
+    margin: 30px auto;
+    padding: 20px 30px;
+    width: 40%;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-.container-bot a{
+.btn-violet{
     color: #fff;
     background-color:#7289da ;
 }
@@ -170,20 +175,6 @@ footer ul{
     padding-bottom: 30px;
 }
 /* DEBUG RULES */
-.container-bot{
-    border: darkgoldenrod 2px solid;
-}
-.container-bot .img-big{
-    height: 300px;
-    background-color: darkslateblue;
-}
-.container-bot h2{
-    background-color: darksalmon;
-}
-.container-bot p{
-    background-color: darkseagreen;
-}
-
 .row{
     display: flex;
     justify-content: space-between;
