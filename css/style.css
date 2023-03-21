@@ -33,7 +33,7 @@ li a:hover{
 /* Header rules*/
 .background-header{
     background-image: url(../img/jumbo.png);
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 50px;
     background-color: #255ee9;
@@ -79,6 +79,9 @@ header{
 }
 .jumbotron h1, .jumbotron p{
     margin-bottom: 20px;
+}
+.jumbotron i{
+    color: black;
 }
 .btn-download{
     display: inline-block;
@@ -176,6 +179,7 @@ footer{
     margin: 0 auto;
     padding: 60px 0;
     color: #fff;
+    border-bottom: 1px #7289da solid;
 }
 .contacts .ita-flag{
     height: 1em;
@@ -219,7 +223,7 @@ footer ul{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 10px auto;
+    margin: 15px auto;
     padding-bottom: 30px;
     font-size: 0.8em;
 }
