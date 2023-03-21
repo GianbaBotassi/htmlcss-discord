@@ -19,7 +19,17 @@ body{
 
 }
 
+/* Hover rules */
 
+.btn-download:hover, .lgn-rgstr:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+.btn-white:hover{
+    color: #5865f2;
+}
+li a:hover{
+    text-decoration: underline;
+}
 /* Header rules*/
 .background-header{
     background-image: url(../img/jumbo.png);
@@ -46,14 +56,20 @@ header{
     align-items: center;
     flex-basis: 45%;
 }
-.login, .register{
+.lgn-rgstr{
     line-height: 30px;
     border-radius: 20px;
     height: 30px;
     padding: 0 10px;
     vertical-align: center;
     text-align: center;
+}
+.white{
     background-color: #fff;
+}
+.blue{
+    background-color: #7289da;
+    color: #fff;
 }
 .jumbotron{
     width: 75%;
@@ -84,10 +100,13 @@ header{
         margin-left: 10px;
 }
 /* Main bloc rules */
-.section-padding{
-    padding: 100px 0;
+main{
+    padding: 100px 0 0;
 }
-.cont-back.grey{
+main section:last-child{
+    padding: 0 0 100px;
+}
+.grey{
     background-color:#f6f6f6;
 }
 .container{
@@ -125,7 +144,7 @@ header{
     text-align: center;
 }
 .container-bot h2{
-    margin: 40px auto;
+    margin: 0 auto 40px;
     font-size: 2.2em;
     width: 80%;
 }
@@ -145,7 +164,6 @@ header{
     color: #fff;
     background-color:#7289da ;
 }
-
 /* Footer rules */
 
 footer{
@@ -157,6 +175,35 @@ footer{
     width: 80%;
     margin: 0 auto;
     padding: 60px 0;
+    color: #fff;
+}
+.contacts .ita-flag{
+    height: 1em;
+}
+.contacts .lang{
+    font-size: 0.7em;
+    margin: 15px 0;
+}
+.social{
+    display: flex;
+    gap:15px;
+    margin: 15px 0;
+}
+a i{
+    color: #fff;
+}
+.row .column:first-child{
+    flex-basis: 15%;
+}
+.column h3, .column li{
+    color: #7289da;
+    font-weight: bold;
+}
+li a{
+    color: #fff;
+}
+.column h3{
+    min-height: 50px;
 }
 .column{
     flex-basis: 10%;
@@ -164,7 +211,8 @@ footer{
 footer ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px; 
+    font-size: 0.7em;
 
 }
 .foot{
@@ -173,32 +221,6 @@ footer ul{
     width: 80%;
     margin: 10px auto;
     padding-bottom: 30px;
+    font-size: 0.8em;
 }
 /* DEBUG RULES */
-.row{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-}
-.column{
-    background-color: darkmagenta ;
-    flex-basis: 10%;
-}
-.contacts h3{
-    background-color: forestgreen ;
-}
-.contacts div:first-child{
-    background-color: hotpink;
-}
-.social{
-    background-color: cornflowerblue;
-}
-footer ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: solid red 2px;
-    
-}
-
