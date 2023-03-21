@@ -15,14 +15,19 @@ li{
 
 /* Body rules */
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 
 }
 
 
 /* Header rules*/
 .background-header{
-    height: 500px;
+    background-image: url(../img/jumbo.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    background-color: #255ee9;
+    background-position-x: center;
 }
 header{
     width: 75%;
@@ -48,6 +53,7 @@ header{
     padding: 0 10px;
     vertical-align: center;
     text-align: center;
+    background-color: #fff;
 }
 .jumbotron{
     width: 75%;
@@ -56,21 +62,26 @@ header{
     line-height: 30px;
 }
 .jumbotron h1, .jumbotron p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-.jumbotron a, .container-bot a{
+.btn-download{
     display: inline-block;
     border-radius: 30px;
-    background-color: #fff;
     height: 40px;
     line-height: 40px;
     vertical-align: center;
-    padding:0 10px;
+    padding:0 20px;
+    margin: 10px 0;
 }
-.jumbotron a:last-child{
+.btn-white{
+   background-color: #fff;
+}
+.btn-black{
     background-color: #000;
     color: white;
-    margin-left: 10px;
+}
+.jumbotron a:last-child{
+        margin-left: 10px;
 }
 /* Main bloc rules */
 .section-padding{
@@ -80,7 +91,7 @@ header{
     background-color:#f6f6f6;
 }
 .container{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     line-height: 25px;
     display: flex;
@@ -91,20 +102,24 @@ header{
     flex-basis: 35%;
 
 }
-.container div{
+.container img{
     flex-basis: 60%;
 }
 .contents h2{
-    font-size: 2em ;
-    line-height: 40px;
-    margin-bottom: 15px;
+    font-size: 2.5em ;
+    line-height: 45px;
+    margin: 40px 0 15px 0 ;
+}
+.contents p{
+    font-size: 0.9em;
+
 }
 .row-reverse{
     flex-direction: row-reverse;
 }
 
 .container-bot{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     line-height: 25px;
     text-align: center;
@@ -155,38 +170,6 @@ footer ul{
     padding-bottom: 30px;
 }
 /* DEBUG RULES */
-.background-header{
-    background-color: #255ee9;
-}
-.navbar .login, .foot .register{
-    height: 30px;
-    background-color: white;
-}
-.logo{
-    height: 20px;
-    width: 50px;
-    background-color: brown;
-}
-
-
-.container{
-    border: solid black 2px;
-}
-.container div{
-    background-color: deepskyblue;
-    height: 350px;
-}
-.container .contents{
-    background-color: darkkhaki;
-
-}
-.contents h2{
-    background-color: crimson;
-}
-.contents p{
-    background-color: coral;
-}
-
 .container-bot{
     border: darkgoldenrod 2px solid;
 }
